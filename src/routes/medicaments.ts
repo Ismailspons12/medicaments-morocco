@@ -3,7 +3,6 @@ import fetch from 'node-fetch'
 
 export const route = Router()
 
-// GET /api/medicaments - Retourne la liste complète des médicaments
 route.get('/medicaments', async (req, res) => {
   try {
     const response = await fetch('https://raw.githubusercontent.com/rramiachraf/medicaments-morocco/main/data/medicaments.json')
